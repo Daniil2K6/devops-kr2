@@ -1,3 +1,4 @@
+# KR2: Baltaev
 import os
 import socket
 

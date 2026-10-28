@@ -1,0 +1,39 @@
+Аудит конфигурации: devops-vm.devops.local, 2026-10-28 02:49
+[1] Служба SSH
+  [OK]   Вход от имени root запрещён
+  [OK]   Парольная аутентификация отключена
+  [OK]   Порт SSH отличен от 22
+  [OK]   MaxAuthTries равен 3
+[2] Межсетевой экран
+  [OK]   Межсетевой экран активен
+  [OK]   Политика входящего трафика по умолчанию: deny
+[3] Учётные записи
+    student (uid=1000)
+    devops (uid=1001)
+[4] Веб-сервер
+  [OK]   Служба nginx активна
+  [OK]   Конфигурация nginx корректна
+  [OK]   Сертификат devops.crt действует не менее 30 дней
+  [OK]   Нет файлов с правом записи для всех, права ключа 600
+[5] Контейнеризация
+  [OK]   Служба Docker активна
+  [OK]   Контейнер PostgreSQL healthy
+  [OK]   Порты 5000 и 5432 не опубликованы во внешнюю сеть
+  [OK]   Права ~/app/.env равны 600
+Пройдено: 14, не пройдено: 0
+AUDIT_EXIT=0
+UFW_UNCHANGED
+/etc/nginx/sites-available/devops-site: OK
+-rw------- 1 root   root   1704 Oct 28 02:49 /etc/ssl/private/kr2.key
+-rw------- 1 devops devops   80 Oct 28 02:46 /home/devops/kr2/.env
+State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                                              
+LISTEN 0      511          0.0.0.0:443       0.0.0.0:*    users:(("nginx",pid=79741,fd=9),("nginx",pid=79740,fd=9),("nginx",pid=3329,fd=9))   
+LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=465,fd=15))                                           
+LISTEN 0      128          0.0.0.0:2222      0.0.0.0:*    users:(("sshd",pid=864,fd=3))                                                       
+LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=465,fd=17))                                           
+LISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:(("nginx",pid=79741,fd=7),("nginx",pid=79740,fd=7),("nginx",pid=3329,fd=7))   
+LISTEN 0      4096       127.0.0.1:8001      0.0.0.0:*    users:(("docker-proxy",pid=79344,fd=8))                                             
+LISTEN 0      4096       127.0.0.1:5000      0.0.0.0:*    users:(("docker-proxy",pid=7289,fd=8))                                              
+LISTEN 0      511             [::]:443          [::]:*    users:(("nginx",pid=79741,fd=10),("nginx",pid=79740,fd=10),("nginx",pid=3329,fd=10))
+LISTEN 0      128             [::]:2222         [::]:*    users:(("sshd",pid=864,fd=4))                                                       
+LISTEN 0      511             [::]:80           [::]:*    users:(("nginx",pid=79741,fd=8),("nginx",pid=79740,fd=8),("nginx",pid=3329,fd=8))   

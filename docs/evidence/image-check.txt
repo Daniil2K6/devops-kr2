@@ -1,0 +1,11 @@
+uid=999(app) gid=999(app) groups=999(app)
+["gunicorn","--bind","0.0.0.0:8001","--access-logfile","-","app:app"]
+ed181fc3468661edb86d0061485241360f10dd913e42e1b96c84326ef0db96a0
+ok
+kr2-test
+
+real	0m0.240s
+user	0m0.006s
+sys	0m0.005s
+IMAGE         ID             DISK USAGE   CONTENT SIZE   EXTRA
+kr2-app:1.0   5f545440b6ca        229MB         49.8MB        

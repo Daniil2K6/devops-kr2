@@ -1,0 +1,29 @@
+BEFORE
+KR2 | Baltaev | container 490941db1d3f | hits: 4
+ Container kr2-app-1 Stopping 
+ Container kr2-app-1 Stopped 
+ Container kr2-app-1 Removing 
+ Container kr2-app-1 Removed 
+ Container kr2-redis-1 Stopping 
+ Container kr2-redis-1 Stopped 
+ Container kr2-redis-1 Removing 
+ Container kr2-redis-1 Removed 
+ Network kr2_backend Removing 
+ Network kr2_backend Removed 
+local     kr2_redis_data
+ Network kr2_backend Creating 
+ Network kr2_backend Creating 
+ Network kr2_backend Created 
+ Network kr2_backend Created 
+ Container kr2-redis-1 Creating 
+ Container kr2-redis-1 Created 
+ Container kr2-app-1 Creating 
+ Container kr2-app-1 Created 
+ Container kr2-redis-1 Starting 
+ Container kr2-redis-1 Started 
+ Container kr2-redis-1 Waiting 
+ Container kr2-redis-1 Healthy 
+ Container kr2-app-1 Starting 
+ Container kr2-app-1 Started 
+AFTER
+KR2 | Baltaev | container 19d2de3bb010 | hits: 5

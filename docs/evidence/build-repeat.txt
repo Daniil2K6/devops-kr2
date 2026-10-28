@@ -1,0 +1,46 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 305B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 90B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 851B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/python:3.12-slim@sha256:6b25cbe6577518889d553cdd5a5da97d259348d8f6e45b527dd731caaba27a07
+#5 resolve docker.io/library/python:3.12-slim@sha256:6b25cbe6577518889d553cdd5a5da97d259348d8f6e45b527dd731caaba27a07 0.0s done
+#5 DONE 0.0s
+
+#6 [2/6] RUN useradd --system --no-create-home app
+#6 CACHED
+
+#7 [3/6] WORKDIR /app
+#7 CACHED
+
+#8 [4/6] COPY requirements.txt .
+#8 CACHED
+
+#9 [5/6] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [6/6] COPY app.py .
+#10 DONE 0.0s
+
+#11 exporting to image
+#11 exporting layers 0.0s done
+#11 exporting manifest sha256:d971459384b27bf75d663cd76cdb93aaa575a7b5987e4fa7bc7b93185886316b
+#11 exporting manifest sha256:d971459384b27bf75d663cd76cdb93aaa575a7b5987e4fa7bc7b93185886316b done
+#11 exporting config sha256:d2adf8b356c27e8f2e57a5c282001b64964c5f8d4a96d54fcc5dd251586f12c5 done
+#11 exporting attestation manifest sha256:c9c07356f9de1172d0d4ca05ce1a212bdc3af0141bcb6c0e33afc262efc7a091 done
+#11 exporting manifest list sha256:9e1dc63a17cbcb31a1ca61a801a4a36ced21ccc0a221d9f1d356f34d711ba719 done
+#11 naming to docker.io/library/kr2-app:1.0 done
+#11 unpacking to docker.io/library/kr2-app:1.0 0.0s done
+#11 DONE 0.1s
