@@ -1,0 +1,48 @@
+HTTP REDIRECT
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   178    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.24.0 (Ubuntu)
+Date: Wed, 28 Oct 2026 02:52:00 GMT
+Content-Type: text/html
+Content-Length: 178
+Connection: keep-alive
+Location: https://api.devops.local/
+
+HTTPS COUNTER
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    49  100    49    0     0   1688      0 --:--:-- --:--:-- --:--:--  1689
+KR2 | Baltaev | container 19d2de3bb010 | hits: 7
+WHOAMI
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    58  100    58    0     0   4202      0 --:--:-- --:--:-- --:--:--  4461
+scheme: https
+client: 192.168.56.1
+host: api.devops.local
+OLD SITE
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   367    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Wed, 28 Oct 2026 02:52:00 GMT
+Content-Type: text/html
+Content-Length: 367
+Last-Modified: Tue, 27 Oct 2026 21:50:08 GMT
+Connection: keep-alive
+ETag: "6ae11c90-16f"
+Accept-Ranges: bytes
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    38  100    38    0     0   1851      0 --:--:-- --:--:-- --:--:--  1900
+Hello from Docker, Baltaev! Visits: 5
+DIRECT PORT MUST FAIL
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0
+curl: (28) Failed to connect to api.devops.local port 8001 after 3006 ms: Timeout was reached
+OK: direct port unavailable

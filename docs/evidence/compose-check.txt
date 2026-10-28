@@ -1,0 +1,16 @@
+NAME          IMAGE            COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+kr2-app-1     kr2-app:1.0      "gunicorn --bind 0.0…"   app       6 seconds ago   Up Less than a second    127.0.0.1:8001->8001/tcp
+kr2-redis-1   redis:7-alpine   "docker-entrypoint.s…"   redis     6 seconds ago   Up 5 seconds (healthy)   6379/tcp
+KR2 | Baltaev | container 490941db1d3f | hits: 1
+KR2 | Baltaev | container 490941db1d3f | hits: 2
+KR2 | Baltaev | container 490941db1d3f | hits: 3
+SERVICE  #   UID  PID    PPID   C   STIME  TTY  TIME      CMD
+app      1   999  78501  78477  16  02:48  ?    00:00:00  /usr/local/bin/python3.12 /usr/local/bin/gunicorn --bind 0.0.0.0:8001 --access-logfile - app:app
+app      1   999  78568  78501  60  02:48  ?    00:00:00  /usr/local/bin/python3.12 /usr/local/bin/gunicorn --bind 0.0.0.0:8001 --access-logfile - app:app
+redis    1   999  78386  78362  1   02:48  ?    00:00:00  redis-server *:6379
+172.19.0.2      redis
+NOAUTH Authentication required.
+
+127.0.0.1:8001
+:0
+600 devops .env
